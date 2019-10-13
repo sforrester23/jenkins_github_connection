@@ -31,8 +31,8 @@ sudo apt install jenkins -y
 systemctl status jenkins
 
 # allow the port
-sudo ufw allow OpenSSH
 sudo ufw enable -y
+sudo ufw allow OpenSSH
 sudo ufw allow 8080
 
 # get the password
