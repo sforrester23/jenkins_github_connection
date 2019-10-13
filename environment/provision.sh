@@ -40,5 +40,5 @@ sudo ufw allow 8080
 # get the status
 # sudo ufw status
 
-# Install ngrok
+# Install ngrok (must be installed on the host machine first)
 sudo npm i -g ngrok --unsafe-perm=true --allow-root

@@ -1,10 +1,6 @@
-# Repository to test automation of setting up Jenkins, with a view to setting up Jenkins to trigger a build when pushing to the repo using GitHub
+# Repository to test automation of setting up Jenkins, with a view to setting up Jenkins to trigger a build when pushing to the repo using GitHub.
 
-## Testing and it works!
-
-### Fully automated :innocent:
-
-# new repository to play around with Jenkins, trying to connect it to GitHub so that every time a commit is made, it triggers a build (not actually doing the build in this section)
+### Fully automated with provisioning :innocent:
 
 ## Step by Step guide:
 
@@ -131,10 +127,12 @@ Under Build Triggers section in set-up, make sure that
 
         GitHub hook trigger got GITScm polling
 
-is checked off. This means that this job will execute every time a commmit is made in your github repository.
+is checked off. This means that this job will execute every time a commit is made in your github repository.
 
 ![github_trigger](https://slathia15472244374.files.wordpress.com/2018/10/14.png?resize=810%2C455)
 
-This is where, theoretically, we could add steps to do builds on jenkins, like execute a shell. No need to play around with this yet.
+This is where, theoretically, we could add steps to do builds on jenkins, like execute a shell. No need to play around with this yet, but we might get to a stage where we can implement tests or something as a triggered build when testing.
 
 Click Build now to execute the build. The first instance will carry out a build, but the only way to test this is to try and do a commit and push on your bash terminal.
+
+If you've carried out all these steps, it should work like a charm and you should see builds every time you commit and push changes in git bash command line.
